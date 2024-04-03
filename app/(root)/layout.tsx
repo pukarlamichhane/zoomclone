@@ -1,3 +1,4 @@
+import Sidebar from '@/components/Siderbar'
 import React, { Children, ReactNode } from 'react'
 
 const RootLayout = ({children}:{children:ReactNode}) => {
@@ -5,7 +6,7 @@ const RootLayout = ({children}:{children:ReactNode}) => {
     <main className='relative'>
         Navbar
         <div className='flex'>
-            SIdbar
+            <Sidebar></Sidebar>
             <section className='flex min-h-screen flex-1 flex-col px-6 pb-6 pt-28 max-md:pb-14 sm:px-14'>
                 <div className='flex'>{children}</div>
             </section>
